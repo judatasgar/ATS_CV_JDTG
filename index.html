@@ -2,28 +2,81 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <!-- R1 -->
+  <!-- Sin esto el celular muestra la página en miniatura (R1) -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>J. Daniel Tapias García · Hoja de vida</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>J. Daniel Tapias García</h1>
-    <p>Data Scientist · Software Developer in Training</p>
-  </header>
+  <!-- Pienso la página como bloques: cada uno tendrá su lugar en el grid (R4) -->
+  <div class="pagina hoja-de-vida">
 
-  <main>
-    <section>
-      <h2>Perfil</h2>
-      <p>Economista especializado en ciencia de datos que integra habilidades de desarrollo de software 
-        para participar en proyectos donde pueda aportar a la toma de decisiones de valor. 
-        Busco mi primera oportunidad en desarrollo de software y análisis econométrico, 
-        con enfoque en Python, SQL y backend.</p>
-    </section>
-  </main>
+    <header class="cabecera">
+      <h1>J. Daniel Tapias García</h1>
+      <p class="profesion">Data Scientist · Software Developer in Training</p>
+    </header>
 
-  <footer>
-    <p>© 2026 J. Daniel Tapias García</p>
-  </footer>
+    <!-- El mismo menú en todas las páginas, con rutas cortas para que funcione publicado (R8, R9) -->
+    <nav class="menu">
+      <a href="index.html" class="activo">Inicio</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main class="principal">
+      <section>
+        <h2>Perfil</h2>
+        <p>Economista especializado en ciencia de datos que integra habilidades de desarrollo de software
+          para participar en proyectos donde pueda aportar a la toma de decisiones de valor.
+          Busco mi primera oportunidad en desarrollo de software y análisis econométrico,
+          con enfoque en Python, SQL y backend.</p>
+      </section>
+
+      <section>
+        <h2>Experiencia</h2>
+        <article>
+          <h3>[CARGO O PROYECTO]</h3>
+          <p class="detalle">[LUGAR] · [AÑO]</p>
+          <ul>
+            <li>[LOGRO O TAREA]</li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>Formación</h2>
+        <article>
+          <h3>[ESTUDIO]</h3>
+          <p class="detalle">[INSTITUCIÓN] · [AÑO]</p>
+        </article>
+      </section>
+    </main>
+
+    <aside class="lateral">
+      <section>
+        <h2>Contacto</h2>
+        <ul class="lista-simple">
+          <li><a href="mailto:[CORREO]">[CORREO]</a></li>
+          <!-- Lo externo abre aparte, así no se pierde mi hoja de vida (R10) -->
+          <li><a href="https://github.com/judatasgar" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Habilidades</h2>
+        <ul class="lista-simple">
+          <li>Python</li>
+          <li>SQL</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </section>
+    </aside>
+
+    <footer class="pie">
+      <p>© 2026 J. Daniel Tapias García</p>
+    </footer>
+
+  </div>
 </body>
 </html>

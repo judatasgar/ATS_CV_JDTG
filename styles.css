@@ -1,0 +1,137 @@
+/* Un solo archivo de estilos para todo el sitio.
+   Empiezo pensando en el celular y al final voy
+   abriendo espacio para pantallas más grandes (R2) */
+
+/* Lo básico: que el padding no agrande las cajas y una letra fácil de leer */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #222222;
+  background-color: #f4f4f4;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+a {
+  color: #1f5fa8;
+}
+
+/* Quiero que ninguna imagen se salga de la pantalla del celular (R7) */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* En pantallas grandes no quiero líneas eternas: le pongo un tope y lo centro (R6) */
+.pagina {
+  max-width: 70rem;
+  width: 92%;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+/* En el celular todo va una cosa debajo de otra, en el orden en que quiero que me lean (R4) */
+.pagina {
+  display: grid;
+  grid-template-areas:
+    "cabecera"
+    "menu"
+    "principal"
+    "pie";
+}
+
+.hoja-de-vida {
+  grid-template-areas:
+    "cabecera"
+    "menu"
+    "principal"
+    "lateral"
+    "pie";
+}
+
+.cabecera  { grid-area: cabecera; }
+.menu      { grid-area: menu; }
+.principal { grid-area: principal; }
+.lateral   { grid-area: lateral; }
+.pie       { grid-area: pie; }
+
+/* Mi nombre arriba, con una línea de color para darle presencia */
+.cabecera {
+  padding: 1.5rem;
+  border-bottom: 3px solid #1f5fa8;
+}
+
+.cabecera h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.profesion {
+  margin: 0.25rem 0 0;
+  color: #555555;
+}
+
+/* El menú: en celular cada enlace en su propia línea, fácil de tocar (R8) */
+.menu {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #dddddd;
+}
+
+.menu a {
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  color: #222222;
+}
+
+.menu a.activo {
+  font-weight: bold;
+  color: #1f5fa8;
+}
+
+/* El contenido con aire alrededor; la lateral un poco más gris para separarla */
+.principal,
+.lateral {
+  padding: 1rem 1.5rem;
+}
+
+.lateral {
+  background-color: #fafafa;
+}
+
+h2 {
+  font-size: 1.25rem;
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 0.25rem;
+}
+
+.detalle {
+  margin: 0;
+  color: #666666;
+  font-size: 0.9rem;
+}
+
+.lista-simple {
+  list-style: none;
+  padding: 0;
+}
+
+/* Un pie discreto para cerrar */
+.pie {
+  padding: 1rem 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666666;
+  border-top: 1px solid #dddddd;
+}
