@@ -127,24 +127,6 @@ h2 {
   padding: 0;
 }
 
-/* Las tarjetas se acomodan solas según el espacio que haya (R5) */
-.tarjetas {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-  gap: 1rem;
-}
-
-.tarjeta {
-  border: 1px solid #dddddd;
-  border-radius: 0.5rem;
-  padding: 1rem;
-}
-
-.tarjeta h2 {
-  margin-top: 0.5rem;
-  border-bottom: none;
-}
-
 /* Un pie discreto para cerrar */
 .pie {
   padding: 1rem 1.5rem;
