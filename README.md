@@ -26,6 +26,12 @@ Sitio personal con mi hoja de vida en estilo ATS (sobrio y fácil de leer), mis 
 ![Celular](capturas/celular.png)
 ![Computador](capturas/computador.png)
 
+## Cómo lo publiqué
+1. Creé un repositorio público en GitHub y conecté mi carpeta local.
+2. Subí el avance por etapas con git add, commit y push.
+3. En Settings → Pages elegí la rama main y la carpeta / (root).
+4. Esperé un par de minutos y probé el enlace en el computador y el celular.
+
 ## Breakpoints
 - **Base (celular):** todo va en una sola columna, en el orden en que quiero que se lea la hoja de vida. El menú queda debajo de la cabecera, con un enlace por línea.
 - **Desde 600px:** el menú pasa a una fila horizontal y el nombre se ve más grande. Las tarjetas se acomodan de a 2 cuando hay espacio.
