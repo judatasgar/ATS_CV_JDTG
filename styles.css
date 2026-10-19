@@ -66,10 +66,11 @@ img {
 .lateral   { grid-area: lateral; }
 .pie       { grid-area: pie; }
 
-/* Mi nombre arriba, con una línea de color para darle presencia */
+/* Mi nombre arriba, centrado en el celular, con una línea de color para darle presencia */
 .cabecera {
   padding: 1.5rem;
   border-bottom: 3px solid #1f5fa8;
+  text-align: center;
 }
 
 .cabecera h1 {
@@ -82,7 +83,23 @@ img {
   color: #555555;
 }
 
-/* El menú: en celular cada enlace en su propia línea, fácil de tocar (R8) */
+/* En celular la foto va arriba del nombre; redonda y de tamaño contenido (R7) */
+.cabecera-con-foto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.foto-perfil {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #1f5fa8;
+}
+
+/* El menú: en celular cada enlace en su propia línea y centrado, fácil de tocar (R8) */
 .menu {
   display: flex;
   flex-direction: column;
@@ -91,6 +108,7 @@ img {
 
 .menu a {
   padding: 0.75rem 1.5rem;
+  text-align: center;
   text-decoration: none;
   color: #222222;
 }
@@ -159,6 +177,15 @@ h2 {
 /* Desde 600px ya hay espacio para poner el menú en fila */
 @media (min-width: 600px) {
   .menu {
+    flex-direction: row;
+  }
+
+  /* Con más espacio, la foto se pone al lado del nombre y todo vuelve a la izquierda */
+  .cabecera {
+    text-align: left;
+  }
+
+  .cabecera-con-foto {
     flex-direction: row;
   }
 
