@@ -145,6 +145,19 @@ h2 {
   padding: 0;
 }
 
+/* Iconos pequeños junto a mis enlaces; son decorativos, por eso su alt va vacío (R7) */
+.icono {
+  display: inline-block;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-right: 0.4rem;
+  vertical-align: -0.15rem;
+}
+
+.lista-simple li {
+  margin-bottom: 0.3rem;
+}
+
 /* Las tarjetas se acomodan solas según el espacio que haya (R5) */
 .tarjetas {
   display: grid;
