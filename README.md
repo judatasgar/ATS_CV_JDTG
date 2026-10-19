@@ -31,13 +31,6 @@ Sitio personal con mi hoja de vida en estilo ATS (sobrio y fácil de leer), mis 
 - **Desde 600px:** el menú pasa a una fila horizontal y el nombre se ve más grande. Las tarjetas se acomodan de a 2 cuando hay espacio.
 - **Desde 1024px:** en la hoja de vida aparece una columna lateral a la izquierda con contacto y habilidades, y el contenido principal queda a la derecha. Las tarjetas se acomodan de a 3.
 
-## Cómo lo publiqué
-1. Creé un repositorio público en GitHub y lo conecté con mi carpeta local usando `git remote add origin`.
-2. Fui subiendo el avance por etapas con `git add`, `git commit` y `git push`.
-3. En el repositorio entré a **Settings → Pages**.
-4. En *Build and deployment* elegí **Deploy from a branch**, la rama `main` y la carpeta `/ (root)`, y guardé.
-5. Esperé un par de minutos hasta que apareció el enlace del sitio y lo probé en el computador y en el celular.
-
 ## Fuentes consultadas
 - Documentación de GitHub Pages: https://docs.github.com/es/pages/getting-started-with-github-pages
 - Material de clase de Campuslands sobre CSS Grid, media queries y diseño responsive.
